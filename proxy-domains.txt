@@ -119,12 +119,6 @@ videomarket.jp
 p-smith.com
 img.vm-movie.jp
 saima.zlzd.xyz
-challenges.cloudflare.com
-ai.com
-openai.com
-cdn.oaistatic.com
-aiv-cdn.net
-aiv-delivery.net
 amazonprimevideo.cn
 amazonprimevideo.com.cn
 amazonprimevideos.com
@@ -311,3 +305,5 @@ youtubekids.com
 youtubemobilesupport.com
 yt.be
 ytimg.com
+google.com
+googleapis.cn

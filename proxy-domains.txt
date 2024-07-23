@@ -306,4 +306,5 @@ youtubemobilesupport.com
 yt.be
 ytimg.com
 google.com
+www.google.com
 googleapis.cn

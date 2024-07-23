@@ -307,4 +307,5 @@ yt.be
 ytimg.com
 google.com
 www.google.com
-googleapis.cn
+services.googleapis.cn
+services.googleapis.com

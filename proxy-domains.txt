@@ -4,3 +4,4 @@ openai.com
 cdn.oaistatic.com
 aiv-cdn.net
 aiv-delivery.net
+chatgpt.com

@@ -1,7 +1,10 @@
-challenges.cloudflare.com
 ai.com
-openai.com
-cdn.oaistatic.com
-aiv-cdn.net
-aiv-delivery.net
 chatgpt.com
+oaistatic.com
+oaiusercontent.com
+openai.com
+openaicomproductionae4b.blob.core.windows.net
+openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+openai.com.cdn.cloudflare.net
+openaiapi-site.azureedge.net
+openaicom.imgix.net

@@ -1,5 +1,6 @@
 ai.com
 chatgpt.com
+chat.openai.com
 oaistatic.com
 oaiusercontent.com
 openai.com

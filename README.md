@@ -1,5 +1,5 @@
 # Dnsmasq SNIproxy One-click Install
-
+只解锁GPT!!!
 ### 脚本说明：
 
 * 原理简述：使用[Dnsmasq](http://thekelleys.org.uk/dnsmasq/doc.html)的DNS将网站解析劫持到[SNIproxy](https://github.com/dlundquist/sniproxy)反向代理的页面上。
@@ -33,7 +33,7 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
 
 ### 普通安装：
 ``` Bash
-wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
 
 ### 卸载方法：

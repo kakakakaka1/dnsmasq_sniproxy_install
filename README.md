@@ -1,12 +1,12 @@
 # Dnsmasq SNIproxy One-click Install
-只解锁GPT!!!
+# 只解锁GPT!!!
 ### 脚本说明：
 
 * 原理简述：使用[Dnsmasq](http://thekelleys.org.uk/dnsmasq/doc.html)的DNS将网站解析劫持到[SNIproxy](https://github.com/dlundquist/sniproxy)反向代理的页面上。
 
 * 用途：让无法观看流媒体的VPS可以观看（前提：VPS中要有一个是能观看流媒体的）。
 
-* 特性：脚本默认解锁`Netflix Hulu HBO`[等](https://github.com/myxuchangbin/dnsmasq_sniproxy_install/blob/master/proxy-domains.txt)，如需增删流媒体域名请编辑文件`/etc/dnsmasq.d/custom_netflix.conf`和`/etc/sniproxy.conf`
+* 特性：脚本只解锁`CHATGPT`[等](https://github.com/nanci0406/dnsmasq_sniproxy_install/blob/master/proxy-domains.txt)，如需解锁其他流媒体请编辑文件`/etc/dnsmasq.d/custom_netflix.conf`和`/etc/sniproxy.conf`
 
 * 脚本支持系统：CentOS6+, Debian8+, Ubuntu16+
     * 理论上支持上述系统及不限制虚拟化类型，如有问题请反馈
@@ -38,7 +38,7 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
 
 ### 卸载方法：
 ``` Bash
-wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
 ```
 
 ### 使用方法：

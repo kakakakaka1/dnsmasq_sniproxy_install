@@ -1,5 +1,5 @@
 # Dnsmasq SNIproxy One-click Install
-#解锁GPT和Gemini
+# 解锁GPT和Gemini
 ### 脚本说明：
 
 * 原理简述：使用[Dnsmasq](http://thekelleys.org.uk/dnsmasq/doc.html)的DNS将网站解析劫持到[SNIproxy](https://github.com/dlundquist/sniproxy)反向代理的页面上。

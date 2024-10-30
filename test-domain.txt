@@ -44,3 +44,11 @@ tiktok.com
 tik-tokapi.com
 tiktokcdn.com
 tiktokv.com
+disney.connections.edge.bamgrid.com
+disney.api.edge.bamgrid.com
+disney-plus.net
+disneyplus.com
+dssott.com
+disneynow.com
+disneystreaming.com
+cdn.registerdisney.go.com

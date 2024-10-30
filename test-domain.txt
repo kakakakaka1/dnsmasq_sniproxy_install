@@ -8,7 +8,6 @@ disneystreaming.com
 cdn.registerdisney.go.com
 tvbanywhere.com
 uapisfm.tvbanywhere.com.sg
-uapisfm.tvbanywhere.com
 tvbanywhere.com.sg
 tvb.com
 tvb.com.au

@@ -52,3 +52,10 @@ dssott.com
 disneynow.com
 disneystreaming.com
 cdn.registerdisney.go.com
+netflix.com
+netflix.net
+nflximg.com
+nflximg.net
+nflxvideo.net
+nflxext.com
+nflxso.net

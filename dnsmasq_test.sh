@@ -10,7 +10,7 @@ plain='\033[0m'
 [[ $EUID -ne 0 ]] && echo -e "[${red}Error${plain}] 请使用root用户来执行脚本!" && exit 1
 
 disable_selinux(){
-    if [ -s /etc/selinux/config ] && grep 'SELINUX=enforcing' /etc/selinux/config; then
+    if [ -s /etc/selinux/config ] && grep 'SELINUX=enforcing' /etc/selinux/config; 键，然后
         sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
         setenforce 0
     fi
@@ -23,37 +23,37 @@ check_sys(){
     local release=''
     local systemPackage=''
 
-    if [[ -f /etc/redhat-release ]]; then
+    if [[ -f /etc/redhat-release ]]; 键，然后
         release="centos"
         systemPackage="yum"
-    elif grep -Eqi "debian|raspbian" /etc/issue; then
+    elif grep -Eqi "debian|raspbian" /etc/issue; 键，然后
         release="debian"
         systemPackage="apt"
-    elif grep -Eqi "ubuntu" /etc/issue; then
+    elif grep -Eqi "ubuntu" /etc/issue; 键，然后
         release="ubuntu"
         systemPackage="apt"
-    elif grep -Eqi "centos|red hat|redhat" /etc/issue; then
+    elif grep -Eqi "centos|red hat|redhat" /etc/issue; 键，然后
         release="centos"
         systemPackage="yum"
-    elif grep -Eqi "debian|raspbian" /proc/version; then
+    elif grep -Eqi "debian|raspbian" /proc/version; 键，然后
         release="debian"
         systemPackage="apt"
-    elif grep -Eqi "ubuntu" /proc/version; then
+    elif grep -Eqi "ubuntu" /proc/version; 键，然后
         release="ubuntu"
         systemPackage="apt"
-    elif grep -Eqi "centos|red hat|redhat" /proc/version; then
+    elif grep -Eqi "centos|red hat|redhat" /proc/version; 键，然后
         release="centos"
         systemPackage="yum"
     fi
 
-    if [[ "${checkType}" == "sysRelease" ]]; then
-        if [ "${value}" == "${release}" ]; then
+    if [[ "${checkType}" == "sysRelease" ]]; 键，然后
+        if [ "${value}" == "${release}" ]; 键，然后
             return 0
         else
             return 1
         fi
-    elif [[ "${checkType}" == "packageManager" ]]; then
-        if [ "${value}" == "${systemPackage}" ]; then
+    elif [[ "${checkType}" == "packageManager" ]]; 键，然后
+        if [ "${value}" == "${systemPackage}" ]; 键，然后
             return 0
         else
             return 1
@@ -62,7 +62,7 @@ check_sys(){
 }
 
 getversion(){
-    if [[ -s /etc/redhat-release ]]; then
+    if [[ -s /etc/redhat-release ]]; 键，然后
         grep -oE  "[0-9.]+" /etc/redhat-release
     else
         grep -oE  "[0-9.]+" /etc/issue
@@ -278,8 +278,8 @@ install_dnsmasq(){
         yes|cp -f /tmp/dnsmasq-2.90/src/dnsmasq /usr/sbin/dnsmasq && chmod +x /usr/sbin/dnsmasq
     fi
     [ ! -f /usr/sbin/dnsmasq ] && echo -e "[${red}Error${plain}] 安装dnsmasq出现问题，请检查." && exit 1
-    download /etc/dnsmasq.d/custom_netflix.conf https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/dnsmasq.conf
-    download /tmp/test-domain.txt https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/test-domain.txt
+    download /etc/dnsmasq.d/custom_netflix.conf https://raw.githubusercontent.com/kakakakaka1/dnsmasq_sniproxy_install/master/dnsmasq.conf
+    download /tmp/test-domain.txt https://raw.githubusercontent.com/kakakakaka1/dnsmasq_sniproxy_install/master/test-domain.txt
     for domain in $(cat /tmp/test-domain.txt); do
         printf "address=/${domain}/${publicip}\n"\
         | tee -a /etc/dnsmasq.d/custom_netflix.conf > /dev/null 2>&1
@@ -376,8 +376,8 @@ install_sniproxy(){
         [ ! -f /etc/systemd/system/sniproxy.service ] && echo -e "[${red}Error${plain}] 下载Sniproxy启动文件出现问题，请检查." && exit 1
     fi
     [ ! -f /usr/sbin/sniproxy ] && echo -e "[${red}Error${plain}] 安装Sniproxy出现问题，请检查." && exit 1
-    download /etc/sniproxy.conf https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/sniproxy.conf
-    download /tmp/snitest-domain.txt https://raw.githubusercontent.com/nanci0406/dnsmasq_sniproxy_install/master/test-domain.txt
+    download /etc/sniproxy.conf https://raw.githubusercontent.com/kakakakaka1/dnsmasq_sniproxy_install/master/sniproxy.conf
+    download /tmp/snitest-domain.txt https://raw.githubusercontent.com/kakakakaka1/dnsmasq_sniproxy_install/master/test-domain.txt
     sed -i -e 's/\./\\\./g' -e 's/^/    \.\*/' -e 's/$/\$ \*/' /tmp/snitest-domain.txt || (echo -e "[${red}Error:${plain}] Failed to configuration sniproxy." && exit 1)
     sed -i '/table {/r /tmp/snitest-domain.txt' /etc/sniproxy.conf || (echo -e "[${red}Error:${plain}] Failed to configuration sniproxy." && exit 1)
     if [ ! -e /var/log/sniproxy ]; then

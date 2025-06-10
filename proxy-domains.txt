@@ -22,3 +22,7 @@ makersuite.google.com
 aistudio.google.com
 bard.google.com
 gemini.google.com
+apis.google.com
+colab.research.google.com
+colab.sandbox.google.com
+developerprofiles.google.com
